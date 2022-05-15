@@ -1,0 +1,15 @@
+server:
+  servlet:
+    context-path: ${CONTEXT_PATH}
+    
+spring:
+  datasource:
+    url: ${PG_URL}
+    username: ${USERNAME}
+    password: ${PASSWORD}
+    hikari:
+      connection-timeout: ${TIMEOUT}
+      maximum-pool-size: ${POOL_SIZE}
+  jpa:
+    open-in-view: true
+    show-sql: true
