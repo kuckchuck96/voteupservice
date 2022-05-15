@@ -18,7 +18,7 @@ import com.service.voteup.voteupservice.model.Vote;
 import com.service.voteup.voteupservice.service.VoteupService;
 
 @RestController
-@CrossOrigin
+@CrossOrigin(origins = { "https://voteup-web.herokuapp.com" })
 public class VoteupController {
 
 	@Autowired
