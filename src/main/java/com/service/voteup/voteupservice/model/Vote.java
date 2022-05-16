@@ -20,7 +20,7 @@ import lombok.ToString;
 public class Vote {
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "vote_id")
 	private Long id;
 
