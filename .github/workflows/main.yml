@@ -15,6 +15,7 @@ jobs:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
           heroku_app_name: "voteup-service"
           heroku_email: ${{secrets.HEROKU_EMAIL}}
+          region: "eu"
         env:
           HD_CONTEXT_PATH: ${{secrets.CONTEXT_PATH}}
           HD_PASSWORD: ${{secrets.PASSWORD}}
