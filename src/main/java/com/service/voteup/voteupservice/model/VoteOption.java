@@ -17,7 +17,7 @@ import lombok.ToString;
 public class VoteOption {
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "option_id")
 	private Long id;
 
