@@ -4,9 +4,9 @@ server:
     
 spring:
   datasource:
-    url: ${PG_URL}
-    username: ${USERNAME}
-    password: ${PASSWORD}
+    url: ${JDBC_DATABASE_URL}
+    username: ${JDBC_DATABASE_USERNAME}
+    password: ${JDBC_DATABASE_PASSWORD}
     hikari:
       connection-timeout: ${TIMEOUT}
       maximum-pool-size: ${POOL_SIZE}

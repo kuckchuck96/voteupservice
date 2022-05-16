@@ -18,8 +18,8 @@ jobs:
           region: "eu"
         env:
           HD_CONTEXT_PATH: ${{secrets.CONTEXT_PATH}}
-          HD_PASSWORD: ${{secrets.PASSWORD}}
-          HD_PG_URL: ${{secrets.PG_URL}}
+#          HD_PASSWORD: ${{secrets.PASSWORD}}
+#          HD_PG_URL: ${{secrets.PG_URL}}
           HD_POOL_SIZE: ${{secrets.POOL_SIZE}}
           HD_TIMEOUT: ${{secrets.TIMEOUT}}
-          HD_USERNAME: ${{secrets.USERNAME}}
+#          HD_USERNAME: ${{secrets.USERNAME}}
