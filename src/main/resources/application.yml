@@ -11,5 +11,7 @@ spring:
       connection-timeout: ${TIMEOUT}
       maximum-pool-size: ${POOL_SIZE}
   jpa:
+    hibernate:
+      ddl-auto: create
     open-in-view: true
     show-sql: true
