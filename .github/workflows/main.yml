@@ -1,0 +1,24 @@
+name: Deploy
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: akhileshns/heroku-deploy@v3.12.12
+        with:
+          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
+          heroku_app_name: "voteup-service"
+          heroku_email: ${{secrets.HEROKU_EMAIL}}
+        env:
+          HD_CONTEXT_PATH: ${{secrets.CONTEXT_PATH}}
+          HD_PASSWORD: ${{secrets.PASSWORD}}
+          HD_PG_URL: ${{secrets.PG_URL}}
+          HD_POOL_SIZE: ${{secrets.POOL_SIZE}}
+          HD_TIMEOUT: ${{secrets.TIMEOUT}}
+          HD_USERNAME: ${{secrets.USERNAME}}
