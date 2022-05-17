@@ -20,3 +20,4 @@ jobs:
           HD_CONTEXT_PATH: ${{secrets.CONTEXT_PATH}}
           HD_POOL_SIZE: ${{secrets.POOL_SIZE}}
           HD_TIMEOUT: ${{secrets.TIMEOUT}}
+          HD_ORIGINS: ${{secrets.ORIGINS}}
