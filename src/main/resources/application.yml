@@ -15,3 +15,7 @@ spring:
       ddl-auto: none
     open-in-view: true
     show-sql: true
+    
+app:
+  origin:
+    urls: ${ORIGINS}
