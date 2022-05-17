@@ -3,7 +3,6 @@ package com.service.voteup.voteupservice.controller;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
-import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -18,7 +17,6 @@ import com.service.voteup.voteupservice.model.Vote;
 import com.service.voteup.voteupservice.service.VoteupService;
 
 @RestController
-@CrossOrigin(origins = { "https://voteup-web.herokuapp.com" })
 public class VoteupController {
 
 	@Autowired
